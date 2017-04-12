@@ -27,6 +27,7 @@ console.log("App listing on port " + port);
 
 var http = require("http");
 setInterval(function() {
+	http.get("http://chinabowl.ca/");
     http.get("http://www.chinabowl.ca");
     console.log("pinged");
 }, 300000); // ping app every 5 minutes to prevent sleeping
